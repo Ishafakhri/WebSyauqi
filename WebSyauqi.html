@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Café Suka-Suka</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+    }
+
+    header {
+      background-color: #4e342e;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    nav {
+      background-color: #6d4c41;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-image: url('kafe.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+
+    .section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .menu-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .menu-card {
+      background-color: #fff;
+      border-radius: 10px;
+      width: 220px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .menu-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .menu-card .desc {
+      padding: 15px;
+    }
+
+    .menu-card h4 {
+      margin: 0;
+      color: #6d4c41;
+    }
+
+    .menu-card p {
+      margin: 8px 0 0;
+      font-size: 0.9em;
+      color: #444;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #4e342e;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      margin-top: 15px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #3e2723;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Café Suka-Suka</h1>
+    <p>Tempat Nongkrong, Ngopi, dan Nikmati Hidangan Spesial!</p>
+  </header>
+
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#tentang">Tentang Kami</a>
+    <a href="https:/wa.me/6287749048830">Kontak</a>
+    
+    </a>
+  </nav>
+
+  <section class="hero">
+    <h2>Rasakan Cita Rasa Otentik</h2>
+    <p>Dari Kopi Pilihan Hingga Makanan Homemade Lezat</p>
+  </section>
+
+  <section class="section" id="menu">
+    <h2 style="text-align:center;">Menu Favorit</h2>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <img src="kopi.jpg" alt="Kopi Latte">
+        <div class="desc">
+          <h4>Kopi Latte</h4>
+          <p>Espresso + Susu Steam</p>
+          <p><strong>Rp 25.000</strong></p>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img src="spageti.jpg" alt="Spaghetti">
+        <div class="desc">
+          <h4>Spaghetti Bolognese</h4>
+          <p>Daging cincang & saus tomat segar</p>
+          <p><strong>Rp 35.000</strong></p>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img src="kue.jpg" alt="Brownies">
+        <div class="desc">
+          <h4>Choco Brownies</h4>
+          <p>Cokelat lumer, topping almond</p>
+          <p><strong>Rp 18.000</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="tentang">
+    <h2 style="text-align:center;">Tentang Café Kami</h2>
+    <p style="max-width: 700px; margin:auto; text-align:center;">
+      Café Suka-Suka berdiri sejak 2020 dan dikenal sebagai tempat nyaman untuk nongkrong, kerja, atau ngobrol santai. Kami menghadirkan suasana homey dengan sajian kopi berkualitas dan makanan lezat hasil olahan chef berpengalaman.
+    </p>
+  </section>
+
+  <section class="section" id="kontak">
+    <h2 style="text-align:center;">Hubungi Kami</h2>
+    <form>
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="pesan">Pesan / Orderan:</label>
+      <textarea id="pesan" name="pesan" rows="4" required></textarea>
+
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Café Suka-Suka. Made with ☕ & ❤️
+  </footer>
+
+</body>
+</html>
